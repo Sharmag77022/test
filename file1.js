@@ -28,7 +28,12 @@ mongoose
   })
   .then(() => logger.log("info", "Database Connection Successful!"))
   .catch((e) => logger.log("error", `${e.message} error occured`));
+const ages = [3, 10, 18, 20];
 
+ages.some(checkAdult);
+function checkAdult(age) {
+  return age > 18;
+}
 const connection = mongoose.connection;
 connection.on("open", async () => {
   if (!(await Counter.findOne({ _id: "domain" }))) {
