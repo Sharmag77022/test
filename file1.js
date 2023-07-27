@@ -32,6 +32,7 @@ const ages = [3, 10, 18, 20];
 
 ages.some(checkAdult);
 function checkAdult(age) {
+  //new change from remote
   return age > 18;
 }
 const connection = mongoose.connection;
