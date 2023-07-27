@@ -6,7 +6,7 @@ const Coupon = require("../models/coupon/couponModel.js");
 // const MongoClient = require('mongodb').MongoClient;
 //hello this is sanjeev testing
 
-const DB =
+const MB =
   process.env.NODE_ENV === "production"
     ? process.env.DB_URI_PROD.replace("<USERNAME>", process.env.MONGO_USERNAME)
         .replace("<PASSWORD>", process.env.MONGO_PASSWORD)
