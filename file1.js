@@ -31,8 +31,8 @@ mongoose
 const ages = [3, 10, 18, 20];
 
 ages.some(checkAdult);
-function checkAdult(age) {
-  return age > 18;
+function checkAdult(wage) {
+  return wage > 18;
 }
 const connection = mongoose.connection;
 connection.on("open", async () => {
